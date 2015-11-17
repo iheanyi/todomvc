@@ -115,17 +115,19 @@ test('todos mark one uncompleted', function(assert){
 });
 
 test('clear completed', function(assert){
-  assert.expect(6);
+  assert.expect(8);
 
   return visit('/').then(() => {
     assert.equal(1, notCompleted().length, 'expected 1 uncompleted');
     assert.equal(1, remainingCountText());
     assert.equal(2, completed().length);
+    assert.ok(exists('.clear-completed'), 'clear completed button should be visible.');
 
     return click('.clear-completed').then(() => {
       assert.equal(1, notCompleted().length, 'expected 3 uncompleted');
       assert.equal(1, remainingCountText());
       assert.equal(0, completed().length);
+      assert.notOk(exists('.clear-completed'), 'clear completed button should be invisible.');
     });
   });
 });
