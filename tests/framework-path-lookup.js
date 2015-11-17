@@ -35,7 +35,8 @@ module.exports = function (names) {
 		{ name: 'vanilladart', path: 'examples/vanilladart/build/web' },
 		{ name: 'canjs_require', path: 'examples/canjs_require/' },
 		{ name: 'troopjs', path: 'examples/troopjs_require/' },
-		{ name: 'thorax_lumbar', path: 'examples/thorax_lumbar/public' }
+		{ name: 'thorax_lumbar', path: 'examples/thorax_lumbar/public' },
+                { name: 'emberjs_ember-cli', path: 'examples/emberjs_ember-cli/dist' },
 	];
 	list = list.map(function (framework) {
 		var exception = exceptions.filter(function (exFramework) {
