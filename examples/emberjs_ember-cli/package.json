@@ -37,5 +37,9 @@
     "ember-data-fixture-adapter": "1.13.0",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.4"
+  },
+  "dependencies": {
+    "todomvc-app-css": "^2.0.3",
+    "todomvc-common": "^1.0.2"
   }
 }
